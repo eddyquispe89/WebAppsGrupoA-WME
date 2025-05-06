@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Productos</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css"> <!-- Referencia a mi archivo "syle.css" -->
+</head>
+
+<body>
+
+
+  <!-- Formulario para Registrar Producto -->
+  <div class="form-container mt-5">
+    <h2 class="text-center form-title">Registrar un Nuevo Producto</h2>
+    <form id="product-form" class="p-4 rounded shadow">
+      <div class="form-group">
+        <label for="productName">Nombre del Producto</label>
+        <input type="text" id="productName" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="unitPrice">Precio</label>
+        <input type="number" id="unitPrice" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="unitsInStock">Stock</label>
+        <input type="number" id="unitsInStock" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Registrar Producto</button>
+    </form>
+  </div>
+  </div>
+
+  <div class="container mt-5">
+    <h1 class="text-center main-title">Gestión de Productos</h1>
+    <!-- Lista de Productos -->
+    <div id="product-list" class="row mt-4">
+      <!-- Aquí se mostrarán los productos de  la api productos.php -->
+    </div>
+
+    <!-- Archivos JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
